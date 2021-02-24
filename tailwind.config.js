@@ -3,13 +3,18 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        primary: '#5c6ac4',
+      },
       backgroundImage: theme => ({
-        'header-texture': "url('https://nextjs-simple-blog.netlify.app/images/bg.png')",
+        'header-texture': "url('/images/bg-2.jpg')",
        })
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

@@ -15,12 +15,12 @@ export default function Post({postData}) {
     <div>
       <img src={cover}></img>
     </div>
-    <div>
-      <h1 className="text-5xl font-black my-4">{title}</h1>
+    <div className="mb-8">
+      <h1 className="text-5xl font-black my-8 text-opacity-90">{title}</h1>
       <Date className="text-gray-500 text-xl" dateString={date} />
     </div>
-    <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-    <h2><Link href="/"><a className="text-blue-600">返回主页</a></Link></h2>
+    <article dangerouslySetInnerHTML={{ __html: contentHtml }} className="prose w-full max-w-none" />
+    <Link href="/"><a className="text-blue-400 underline text-xl block mt-8">返回主页</a></Link>
   </Layout>)
 }
 
@@ -30,7 +30,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({params}) {
-  console.log(params)
   const postData = await getPostData(params.id)
   return {
     props: {postData}

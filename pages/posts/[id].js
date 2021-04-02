@@ -16,11 +16,11 @@ export default function Post({postData}) {
       <img src={cover}></img>
     </div>
     <div className="mb-8">
-      <h1 className="text-5xl font-black my-8 text-opacity-90">{title}</h1>
+      <h1 className="text-5xl font-black my-8 text-opacity-80">{title}</h1>
       <Date className="text-gray-500 text-xl" dateString={date} />
     </div>
     <article dangerouslySetInnerHTML={{ __html: contentHtml }} className="prose w-full max-w-none" />
-    <Link href="/"><a className="text-blue-400 underline text-xl block mt-8">返回主页</a></Link>
+    <Link href="/"><a className="text-green-700 underline text-xl block mt-8 text-opacity-80">返回主页</a></Link>
   </Layout>)
 }
 

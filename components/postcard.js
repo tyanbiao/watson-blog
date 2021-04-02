@@ -9,7 +9,7 @@ export default function PostCard(props) {
         <section className="flex w-full flex-col md:flex-row">
           <img className="w-full md:w-64" src={cover} />
           <div className="md:ml-8 mt-4 md:mt-0">
-            <h2 className="text-2xl text-blue-900	leading-tight text-opacity-80">{title}</h2>
+            <h2 className="text-2xl text-green-900	leading-tight text-opacity-80">{title}</h2>
             <p className="my-4 text-gray-600 text-base">{description}</p>
             <Date className="text-gray-500 text-xl" dateString={date} />
           </div>

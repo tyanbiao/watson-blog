@@ -7,7 +7,7 @@ module.exports = {
         primary: '#5c6ac4',
       },
       backgroundImage: theme => ({
-        'header-texture': "url('/images/bg-2.jpg')",
+        'header-texture': "url('/images/adrian-Xft-JdC-Jbc-unsplash.jpg')",
        })
     },
   },
